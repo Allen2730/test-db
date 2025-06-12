@@ -19,7 +19,7 @@ type TwitterInfo struct {
 }
 
 type TelegramInfo struct {
-	TelegramID        int    `gorm:"column:telegram_id;type:varchar(255);primaryKey"`
+	TelegramID        int    `gorm:"column:telegram_id;primaryKey"`
 	TelegramFirstName string `gorm:"column:telegram_first_name"`
 	TelegramLastName  string `gorm:"column:telegram_last_name"`
 	TelegramUserName  string `gorm:"column:telegram_username"`
